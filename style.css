@@ -206,3 +206,10 @@ p.post-info a:visited {
     color: #999;
 
 }
+
+/* Image Style */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
