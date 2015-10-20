@@ -64,6 +64,21 @@ article.post-link a {
     padding: 20px;
 }
 
+/* Post format gallery Styles */
+
+article.post-gallery {
+    background-color: #222;
+    color: #FFF;
+    padding: 20px;
+}
+
+article.post-gallery img {
+    border: none!important;
+}
+
+article.post-gallery h2 {
+    text-align: center;
+}
 
 /* Header */
 .site-header {
