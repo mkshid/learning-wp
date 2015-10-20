@@ -38,7 +38,8 @@ article.post:last-of-type {
 }
 
 /* Aside Styles */
-article.post-aside {
+article.post-aside,
+article.post-link {
     font-size: 125%;
     background-color: #FFF5CB;
     padding: 20px;
@@ -50,6 +51,17 @@ article.post-aside {
     font-size: 68%;
     margin: 0;
     color: #777;
+}
+
+/* Link Post Format Style */
+article.post-link {
+    padding: 0px;
+    background-color: #E0EBFF;
+}
+
+article.post-link a {
+    display: block;
+    padding: 20px;
 }
 
 
