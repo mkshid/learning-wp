@@ -224,3 +224,27 @@ img {
     top: 0;
     left: 0;
 }
+
+/* Search style */
+.searchform{
+    float: right;
+}
+
+div.hd-search label{
+    position: absolute;
+    left: -9999px;
+}
+
+div.hd-search #searchsubmit {
+    background-color: #006ec3;
+    color: FFF;
+    padding: 5px 14px;
+    border: none;
+    vertical-align: top;
+}
+
+div.hd-search #s {
+    vertical-align: top;
+    padding: 3px 0px;
+
+}
