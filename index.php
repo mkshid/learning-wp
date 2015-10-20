@@ -4,7 +4,18 @@ get_header();
 
   if (have_posts()):
     while (have_posts()): the_post(); ?>
-    <article class="post">
+    <article class="post <?php if (has_post_thumbnail()) {?>
+      has-thumbnail
+      <?php } ?> ">
+
+      <!-- post-thumbnail -->
+      <div class="post-thumbnail">
+        <a href="<?php the_permalink(); ?>">
+          <?php the_post_thumbnail('small-thumbnail'); ?>
+        </a>
+      </div>
+      <!-- post-thumbnail -->
+
      <a href="<?php the_permalink(); ?>"> <h2><?php the_title(); ?></h2></a>
      <p class="post-info"><?php the_time('F jS, Y g:i a'); ?> |
      by
@@ -29,8 +40,6 @@ get_header();
        ?>
 
      </p>
-      <?php the_post_thumbnail('small-thumbnail'); ?>
-
     <?php
 
       if ($post->post_excerpt) {
