@@ -6,13 +6,6 @@
 
   add_action( 'wp_enqueue_scripts', 'learningWP_resources' );
 
-// Navigations Menu
-
-  register_nav_menus(array(
-      'primary' => __('Primary Menu'),
-      'footer' => __('Footer Menu'),
-    ));
-
 // Get top of ancestors
   function get_top_ancestor_id(){
 
@@ -44,3 +37,19 @@ function custom_excerpt_length(){
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+// Theme Setup
+function learningWP_setup(){
+
+  // Navigations Menu
+  register_nav_menus(array(
+      'primary' => __('Primary Menu'),
+      'footer' => __('Footer Menu'),
+    ));
+
+  // Add feature image support
+  add_theme_support('post-thumbnails');
+
+}
+
+add_action('after_setup_theme', 'learningWP_setup');
