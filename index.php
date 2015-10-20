@@ -8,7 +8,7 @@ get_header();
      <a href="<?php the_permalink(); ?>"> <h2><?php the_title(); ?></h2></a>
      <p class="post-info"><?php the_time('F jS, Y g:i a'); ?> |
      by
-     <a href="<?php get_author_posts_url(get_the_author_meta('ID' )); ?>">
+     <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">
       <?php the_author(); ?>
      </a> |
      Posted in
