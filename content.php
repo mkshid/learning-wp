@@ -2,13 +2,18 @@
   has-thumbnail
   <?php } ?> ">
 
-  <!-- post-thumbnail -->
-  <div class="post-thumbnail">
-    <a href="<?php the_permalink(); ?>">
-      <?php the_post_thumbnail('small-thumbnail'); ?>
-    </a>
-  </div>
-  <!-- post-thumbnail -->
+  <?php if (!is_single()) { ?>
+
+    <!-- post-thumbnail -->
+    <div class="post-thumbnail">
+      <a href="<?php the_permalink(); ?>">
+        <?php the_post_thumbnail('small-thumbnail'); ?>
+      </a>
+    </div>
+    <!-- post-thumbnail -->
+
+  <?php
+    }?>
 
  <a href="<?php the_permalink(); ?>"> <h2><?php the_title(); ?></h2></a>
  <p class="post-info"><?php the_time('F jS, Y g:i a'); ?> |
@@ -42,8 +47,12 @@
        <a href="<?php the_permalink(); ?>">Read more&raquo</a>
       </p>
   <?php
-
-    } else {
+    }
+    elseif (is_single()) {
+      the_post_thumbnail('banner-image');
+      the_content();
+     }
+    else {
       if ($post->post_excerpt) {
         ?>
       <p>
