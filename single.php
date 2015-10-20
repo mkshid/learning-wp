@@ -29,7 +29,7 @@ get_header();
        ?>
 
      </p>
-      <?php the_excerpt(); ?>
+      <?php the_content(); ?>
     </article>
 
   <?php
