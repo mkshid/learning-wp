@@ -1,148 +1,149 @@
 /*
-Theme Name: LeaningWordPress
+Theme Name: LearningWordPress
 Author: LearnWebCode
+Author URI: http://www.youtube.com/user/LearnWebCode
 Version: 1.0
 */
 
 html {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
 }
 
 a:link,
 a:visited {
-    color: #006ec3;
+	color: #006ec3;
 }
 
 p {
-    line-height: 1.65em;
-    margin: 0 0 1em 0;
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1em 0;
-    font-weight: normal;
+	margin: 0 0 1em 0;
+	font-weight: normal;
 }
 
 /* General Layout */
 div.container {
-    max-width: 920px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* Content Area */
 article.post {
-    border-bottom: 1px dotted #DDD;
-    margin-bottom: 20px;
+	border-bottom: 1px dotted #DDD;
+	margin-bottom: 20px;
 }
 
 article.post:last-of-type {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 /* Aside Styles */
 article.post-aside,
 article.post-link {
-    font-size: 125%;
-    background-color: #FFF5CB;
-    padding: 20px 20px 1px 20px;
-    border-bottom: none;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+	font-size: 125%;
+	background-color: #FFF5CB;
+	padding: 20px 20px 1px 20px;
+	border-bottom: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
 }
 
 .mini-meta {
-    font-size: 68%;
-    margin: 0;
-    color: #777;
-    display: block;
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+	display: block;
 }
 
 .mini-meta a {
-    color: #777;
-    text-decoration: none;
+	color: #777;
+	text-decoration: none;
 }
 
 /* Link Post Format Styles */
 article.post-link {
-    background-color: #E0EBFF;
-    padding: 0;
+	background-color: #E0EBFF;
+	padding: 0;
 }
 
 article.post-link a {
-    display: block;
-    text-decoration: none;
-    padding: 20px;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
 }
 
 .post-link-text {
-    line-height: 1.65em;
-    color: #004982;
+	line-height: 1.65em;
+	color: #004982;
 }
 
 /* Gallery Post Format Styles */
 article.post-gallery {
-    background-color: #222;
-    color: #FFF;
-    padding: 20px;
-    border-bottom: none;
+	background-color: #222;
+	color: #FFF;
+	padding: 20px;
+	border-bottom: none;
 }
 
 article.post-gallery .gallery img {
-    border: none!important;
+	border: none!important;
 }
 
 article.post-gallery .wp-caption-text {
-    font-size: 86%;
+	font-size: 86%;
 }
 
 article.post-gallery h2 {
-    text-align: center;
+	text-align: center;
 }
 
 article.post-gallery h2 a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 130%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 130%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 
 /* Header */
 .site-header {
-    border-bottom: 1px solid #DDD;
-    margin-bottom: 20px;
-    padding: 30px 0 0 0;
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 20px;
+	padding: 30px 0 0 0;
 }
 
 .site-header h1 {
-    margin: 0;
+	margin: 0;
 }
 
 .site-header h1 a:link,
 .site-header h1 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .site-header h5 {
-    margin: 0;
+	margin: 0;
 }
 
 /* Standard Nav Menu */
 .site-nav ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
@@ -150,126 +151,126 @@ article.post-gallery h2 a {
 .site-nav ul { *zoom: 1; }
 
 .site-nav ul li {
-    list-style: none;
-    float: left;
+	list-style: none;
+	float: left;
 }
 
 .site-nav ul li a:link,
 .site-nav ul li a:visited {
-    display: block;
+	display: block;
 }
 
 /* Header Nav Menu */
 .site-header nav {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 .site-header nav ul li {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {
-    padding: 10px 17px;
-    text-decoration: none;
-    border: 1px solid #DDD;
-    border-bottom: none;
+	padding: 10px 17px;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	border-bottom: none;
 }
 
 .site-header nav ul li a:hover {
-    background-color: #ECECEC;
+	background-color: #ECECEC;
 }
 
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited,
 .site-header nav ul li.current-page-ancestor a:link,
 .site-header nav ul li.current-page-ancestor a:visited {
-    font-weight: bold;
-    background-color: #006ec3;
-    color: #FFF;
+	font-weight: bold;
+	background-color: #006ec3;
+	color: #FFF;
 }
 
 /* Main Column */
 .main-column {
-    width: 66%;
-    float: left;
+	width: 66%;
+	float: left;
 }
 
 /* Side Column */
 .side-column {
-    width: 30%;
-    float: right;
+	width: 30%;
+	float: right;
 }
 
 .side-column .widget-item {
-    border-bottom: 1px solid #DDD;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 h2.widget-title {
-    font-weight: normal;
-    margin-bottom: 10px;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 138%;
+	font-weight: normal;
+	margin-bottom: 10px;
+	color: #888;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 138%;
 }
 
 .widget-item ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .widget-item ul li {
-    list-style-position: inside;
-    line-height: 1.65em;
+	list-style-position: inside;
+	line-height: 1.65em;
 }
 
 .widget-item p:last-child {
-    margin: 0;
+	margin: 0;
 }
 
 /* Footer Widget Areas */
 .footer-widgets {
-    padding-top: 40px;
-    margin-right: -40px;
+	padding-top: 40px;
+	margin-right: -40px;
 }
 
 .footer-widget-area {
-    width: 25%;
-    float: left;
-    box-sizing: border-box;
-    padding-right: 40px;
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 40px;
 }
 
 /* Footer */
 .site-footer {
-    overflow: hidden;
-    margin-top: 30px;
-    border-top: 1px solid #DDD;
-    font-size: 84%;
+	overflow: hidden;
+	margin-top: 30px;
+	border-top: 1px solid #DDD;
+	font-size: 84%;
 }
 
 /* Footer Nav Menu */
 .site-footer nav {
-    margin: 30px 0 10px 0;
+	margin: 30px 0 10px 0;
 }
 
 .site-footer nav ul li {
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px solid #DDD;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #DDD;
 }
 
 .site-footer nav ul li:last-of-type {
-    border-right: none;
+	border-right: none;
 }
 
 /* Page Layout */
 article.page h2 {
-    font-size: 225%;
-    margin-bottom: 15px;
+	font-size: 225%;
+	margin-bottom: 15px;
 }
 
 /* Clearfix */
@@ -280,125 +281,125 @@ article.page h2 {
 
 /* Two Column Title Layout */
 div.title-column {
-    width: 30%;
-    float: left;
+	width: 30%;
+	float: left;
 }
 
 div.text-column {
-    width: 70%;
-    float: right;
+	width: 70%;
+	float: right;
 }
 
 /* Info Box Styles */
 div.info-box {
-    width: 30%;
-    float: right;
-    margin: 0 0 30px 30px;
-    padding: 20px;
-    background-color: #EEE;
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #EEE;
 }
 
 div.info-box h4 {
-    margin-bottom: 6px;
+	margin-bottom: 6px;
 }
 
 div.info-box p {
-    font-size: 85%;
+	font-size: 85%;
 }
 
 /* Children Links */
 .children-links {
-    margin-bottom: 20px;
-    font-size: 80%;
+	margin-bottom: 20px;
+	font-size: 80%;
 }
 
 .children-links a:link,
 .children-links a:visited {
-    text-decoration: none;
-    padding-bottom: 2px;
+	text-decoration: none;
+	padding-bottom: 2px;
 }
 
 .children-links ul {
-    float: left;
+	float: left;
 }
 
 .children-links li {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 .children-links .parent-link {
-    float: left;
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 1px solid #DDD;
-    font-size: 120%;
-    font-weight: bold;
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	font-size: 120%;
+	font-weight: bold;
 }
 
 .children-links .parent-link a:link,
 .children-links .parent-link a:visited {
-    color: #333;
+	color: #333;
 }
 
 .children-links .current_page_item a:link,
 .children-links .current_page_item a:visited {
-    border-bottom: 1px solid #DDD;
-    color: #333;
-    cursor: default;
+	border-bottom: 1px solid #DDD;
+	color: #333;
+	cursor: default;
 }
 
 /* Post Styles */
 .post h2 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 p.post-info {
-    font-size: 87%;
-    color: #999;
+	font-size: 87%;
+	color: #999;
 }
 
 p.post-info a:link,
 p.post-info a:visited {
-    color: #999;
+	color: #999;
 }
 
 
 /* Image Styles */
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .has-thumbnail {
-    position: relative;
-    padding-left: 200px;
+	position: relative;
+	padding-left: 200px;
 }
 
 .post-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /* Search */
 div.hd-search {
-    float: right;
+	float: right;
 }
 
 div.hd-search label {
-    position: absolute;
-    left: -9999px;
+	position: absolute;
+	left: -9999px;
 }
 
 div.hd-search #searchsubmit {
-    background-color: #006ec3;
-    color: #FFF;
-    padding: 5px 14px;
-    border: none;
-    vertical-align: top;
+	background-color: #006ec3;
+	color: #FFF;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
 }
 
 div.hd-search #s {
-    vertical-align: top;
-    padding: 3px 0;
+	vertical-align: top;
+	padding: 3px 0;
 }

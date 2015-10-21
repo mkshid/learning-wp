@@ -1,24 +1,39 @@
 <?php
 
-get_header();
+get_header(); ?>
 
-  if (have_posts()):
-    ?>
+	<!-- site-content -->
+	<div class="site-content clearfix">
+		
+		<!-- main-column -->
+		<div class="main-column">
+			
+			<?php
+			
+			if (have_posts()) : ?>
 
-      <h2>Search result for: <?php the_search_query(); ?></h2>
+				<h2>Search results for: <?php the_search_query(); ?></h2>
 
-    <?php
+				<?php
+				while (have_posts()) : the_post();
 
-    while (have_posts()): the_post();
-      get_template_part('content', get_post_format());
+				get_template_part('content', get_post_format());
 
-    endwhile;
+				endwhile;
 
-  else:
-    echo '<p>No content found</p>';
+				else :
+					echo '<p>No content found</p>';
 
-  endif;
+				endif;
+			
+			?>
+			
+		</div><!-- /main-column -->
+		
+		<?php get_sidebar(); ?>
+		
+	</div><!-- /site-content -->
 
-get_footer();
+<?php get_footer();
 
 ?>
