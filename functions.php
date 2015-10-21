@@ -58,3 +58,39 @@ function learningWP_setup(){
 }
 
 add_action('after_setup_theme', 'learningWP_setup');
+
+// Add our Widget locations
+function my_widgets_init(){
+
+    register_sidebar(array(
+      'name'          => 'Sidebar',
+      'id'            => 'sidebar1',
+      'before_widget' => '<div class="widget-item">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h4 class=""my-special-class>',
+      'after_title'   => '</h4>',
+    ));
+
+    register_sidebar(array(
+      'name'          => 'Footer Area 1',
+      'id'            => 'footer1',
+    ));
+
+    register_sidebar(array(
+      'name'          => 'Footer Area 2',
+      'id'            => 'footer2',
+    ));
+
+    register_sidebar(array(
+      'name'          => 'Footer Area 3',
+      'id'            => 'footer3',
+    ));
+
+    register_sidebar(array(
+      'name'          => 'Footer Area 4',
+      'id'            => 'footer4',
+    ));
+
+}
+
+add_action('widgets_init', 'my_widgets_init');

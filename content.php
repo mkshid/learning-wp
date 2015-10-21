@@ -1,4 +1,4 @@
-<article class="post <?php if (has_post_thumbnail()) {?>
+<article class="post <?php if (has_post_thumbnail() AND !is_single()) {?>
   has-thumbnail
   <?php } ?> ">
 
